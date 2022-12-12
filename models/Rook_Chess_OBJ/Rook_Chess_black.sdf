@@ -1,0 +1,66 @@
+<sdf xmlns:drake="drake.mit.edu" version="1.5">
+  <model name="Rook_Chess_black">
+    <link name="Rook_Chess_black_body_link">
+      <pose>0 0 0 0 0 0</pose>
+      <inertial>
+        <mass>1.7009E-01</mass>
+        <inertia>
+          <ixx>1.1113E-04</ixx>
+          <ixy>7.6055E-11</ixy>
+          <ixz>1.0969E-12</ixz>
+          <iyy>3.7825E-05</iyy>
+          <iyz>1.5191E-12</iyz>
+          <izz>1.1113E-04</izz>
+        </inertia>
+      </inertial>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>Rook_Chess_black.obj</uri>
+            <scale>3.0000E-03 3.0000E-03 3.0000E-03</scale>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="collision_0000">
+        <geometry>
+          <mesh>
+            <uri>Rook_Chess_black_parts/Rook_Chess_black_convex_piece_000.obj</uri>
+            <drake:declare_convex/>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_0001">
+        <geometry>
+          <mesh>
+            <uri>Rook_Chess_black_parts/Rook_Chess_black_convex_piece_001.obj</uri>
+            <drake:declare_convex/>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_0002">
+        <geometry>
+          <mesh>
+            <uri>Rook_Chess_black_parts/Rook_Chess_black_convex_piece_002.obj</uri>
+            <drake:declare_convex/>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_0003">
+        <geometry>
+          <mesh>
+            <uri>Rook_Chess_black_parts/Rook_Chess_black_convex_piece_003.obj</uri>
+            <drake:declare_convex/>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_0004">
+        <geometry>
+          <mesh>
+            <uri>Rook_Chess_black_parts/Rook_Chess_black_convex_piece_004.obj</uri>
+            <drake:declare_convex/>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+  </model>
+</sdf>

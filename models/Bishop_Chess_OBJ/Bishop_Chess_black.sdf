@@ -1,0 +1,58 @@
+<sdf xmlns:drake="drake.mit.edu" version="1.5">
+  <model name="Bishop_Chess_black">
+    <link name="Bishop_Chess_black_body_link">
+      <pose>0 0 0 0 0 0</pose>
+      <inertial>
+        <mass>1.0645E-01</mass>
+        <inertia>
+          <ixx>9.2807E-05</ixx>
+          <ixy>2.3522E-07</ixy>
+          <ixz>9.0813E-14</ixz>
+          <iyy>1.5137E-05</iyy>
+          <iyz>7.7939E-12</iyz>
+          <izz>9.2823E-05</izz>
+        </inertia>
+      </inertial>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>Bishop_Chess_black.obj</uri>
+            <scale>2.5000E-03 2.5000E-03 2.5000E-03</scale>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="collision_0000">
+        <geometry>
+          <mesh>
+            <uri>Bishop_Chess_black_parts/Bishop_Chess_black_convex_piece_000.obj</uri>
+            <drake:declare_convex/>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_0001">
+        <geometry>
+          <mesh>
+            <uri>Bishop_Chess_black_parts/Bishop_Chess_black_convex_piece_001.obj</uri>
+            <drake:declare_convex/>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_0002">
+        <geometry>
+          <mesh>
+            <uri>Bishop_Chess_black_parts/Bishop_Chess_black_convex_piece_002.obj</uri>
+            <drake:declare_convex/>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_0003">
+        <geometry>
+          <mesh>
+            <uri>Bishop_Chess_black_parts/Bishop_Chess_black_convex_piece_003.obj</uri>
+            <drake:declare_convex/>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+  </model>
+</sdf>

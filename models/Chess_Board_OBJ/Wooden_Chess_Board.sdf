@@ -1,0 +1,34 @@
+<sdf xmlns:drake="drake.mit.edu" version="1.5">
+  <model name="Wooden_Chess_Board">
+    <link name="Wooden_Chess_Board_body_link">
+      <pose>0 0 0 0 0 0</pose>
+      <inertial>
+        <mass>4.6162E+01</mass>
+        <inertia>
+          <ixx>3.8590E+00</ixx>
+          <ixy>-1.1417E-08</ixy>
+          <ixz>3.2894E-09</ixz>
+          <iyy>7.7134E+00</iyy>
+          <iyz>-8.8267E-09</iyz>
+          <izz>3.8584E+00</izz>
+        </inertia>
+      </inertial>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>Wooden_Chess_Board.obj</uri>
+            <scale>1.8000E-02 1.8000E-02 1.8000E-02</scale>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="collision_0000">
+        <geometry>
+          <mesh>
+            <uri>Wooden_Chess_Board_parts/Wooden_Chess_Board_convex_piece_000.obj</uri>
+            <drake:declare_convex/>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+  </model>
+</sdf>

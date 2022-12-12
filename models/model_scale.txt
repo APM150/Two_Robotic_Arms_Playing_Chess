@@ -1,0 +1,15 @@
+chessboard: 0.018
+
+queen/king: 0.0027
+
+pawn: 0.003
+
+rook: 0.003
+
+bishop: 0.0025
+
+knight: 0.0025
+
+
+black_rook_pos: -0.35, -0.35
+1 grid dis: 0.1

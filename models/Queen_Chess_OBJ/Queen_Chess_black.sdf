@@ -1,0 +1,74 @@
+<sdf xmlns:drake="drake.mit.edu" version="1.5">
+  <model name="Queen_Chess_black">
+    <link name="Queen_Chess_black_body_link">
+      <pose>0 0 0 0 0 0</pose>
+      <inertial>
+        <mass>1.3527E-01</mass>
+        <inertia>
+          <ixx>1.6551E-04</ixx>
+          <ixy>1.2179E-09</ixy>
+          <ixz>-3.4957E-12</ixz>
+          <iyy>2.2588E-05</iyy>
+          <iyz>-6.7407E-10</iyz>
+          <izz>1.6550E-04</izz>
+        </inertia>
+      </inertial>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>Queen_Chess_black.obj</uri>
+            <scale>2.7000E-03 2.7000E-03 2.7000E-03</scale>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="collision_0000">
+        <geometry>
+          <mesh>
+            <uri>Queen_Chess_black_parts/Queen_Chess_black_convex_piece_000.obj</uri>
+            <drake:declare_convex/>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_0001">
+        <geometry>
+          <mesh>
+            <uri>Queen_Chess_black_parts/Queen_Chess_black_convex_piece_001.obj</uri>
+            <drake:declare_convex/>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_0002">
+        <geometry>
+          <mesh>
+            <uri>Queen_Chess_black_parts/Queen_Chess_black_convex_piece_002.obj</uri>
+            <drake:declare_convex/>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_0003">
+        <geometry>
+          <mesh>
+            <uri>Queen_Chess_black_parts/Queen_Chess_black_convex_piece_003.obj</uri>
+            <drake:declare_convex/>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_0004">
+        <geometry>
+          <mesh>
+            <uri>Queen_Chess_black_parts/Queen_Chess_black_convex_piece_004.obj</uri>
+            <drake:declare_convex/>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_0005">
+        <geometry>
+          <mesh>
+            <uri>Queen_Chess_black_parts/Queen_Chess_black_convex_piece_005.obj</uri>
+            <drake:declare_convex/>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+  </model>
+</sdf>
